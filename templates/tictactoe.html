@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tic Tac Toe Game</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+<body>
+
+    <div id="userInfo"></div>
+
+    <h1>Welcome to the tic-tac-toe game page</h1>
+    <a href="/">Go to Back to the Homepage</a>
+
+      <h1>Tic-Tac-Toe</h1>
+      <div id="board">
+        <div class="row">
+          <button class="cell"></button>
+          <button class="cell"></button>
+          <button class="cell"></button>
+        </div>
+        <div class="row">
+          <button class="cell"></button>
+          <button class="cell"></button>
+          <button class="cell"></button>
+        </div>
+        <div class="row">
+          <button class="cell"></button>
+          <button class="cell"></button>
+          <button class="cell"></button>
+        </div>
+      </div>
+      <button id="reset">Reset</button>
+
+    <script src="{{ url_for('static', filename='js/tictactoe.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/user-info.js') }}"></script>
+</body>
+</html>

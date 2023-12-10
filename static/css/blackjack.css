@@ -1,0 +1,13 @@
+.card {
+    width: 72px;
+    height: 96px;
+    object-fit: none;
+    padding: 2px;
+}
+div {
+    padding-bottom: 10px;
+}
+
+#scorearea span {
+    font-weight: bold;
+}

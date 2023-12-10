@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logging Out</title>
+    <style>
+        /* Resetting default margin and padding */
+        body, h1, p, button, a {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            position: relative;
+            background: #000;
+            animation: animateBackground 20s linear infinite;
+        }
+
+        @keyframes animateBackground {
+            0% { background-position: 0 0; }
+            100% { background-position: 100% 100%; }
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+            z-index: 1;
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        .btn-container {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        button, .homepage-link {
+            padding: 15px 30px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            width: 200px;
+            text-align: center;
+            background: linear-gradient(45deg, #e74c3c, #3498db);
+            color: #fff;
+        }
+
+        button:hover, .homepage-link:hover {
+            opacity: 0.8;
+            transform: translateY(-3px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #fff;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+        }
+
+        /* SVG Illustration Styles */
+        svg {
+            width: 200px;
+            fill: #fff;
+            margin-bottom: 20px;
+        }
+    </style>
+
+    <script>
+        function logout() {
+            // Remove the username from local storage
+            localStorage.removeItem('username');
+            // Redirect the user to the login page
+            window.location.href = "/login";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <!-- Illustration -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M12 1l7 4v14l-7 4-7-4V5l7-4zm-1 15h2v2h-2v-2zm0-6h2v5h-2V10zm0-4h2v2h-2V6z"/>
+        </svg>
+        <!-- End of Illustration -->
+
+        <h1>Goodbye for now!</h1>
+        <p>It's been great having you here.</p>
+    </header>
+
+    <main>
+        <div id="userInfo">
+            <!-- Display user information creatively, if available -->
+            <!-- This could be personalized for each user -->
+        </div>
+
+        <div class="btn-container">
+            <a href="/" class="homepage-link">Go back to the Homepage</a>
+            <button onclick="logout()">Logout</button>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Footer content, if any -->
+    </footer>
+</body>
+</html>

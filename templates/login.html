@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Login Page</title>
+    </head>
+    <body>
+        <h1>Welcome to the Casino Login! 🎰</h1>
+        <a href="/">Go to Back to the Homepage</a>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button type="button" onclick="login()">Login</button>
+            <button type="button" onclick="register()">Register</button>
+        </form>
+    </body>
+        <script src="{{ url_for('static', filename='js/login.js') }}"></script>
+
+   
+        <style>
+            body {
+                background-color: #000;
+                overflow: hidden;
+                margin: 0;
+                padding: 0;
+            }
+            .confetti {
+                position: absolute;
+                width: 2px;
+                height: 8px;
+                background-color: #ffcc00;
+                opacity: 0.8;
+                pointer-events: none;
+                animation: confetti-fall linear infinite;
+                transform-origin: top left;
+            }
+            @keyframes confetti-fall {
+                0% { transform: translateY(-100vh) rotateZ(0); }
+                100% { transform: translateY(100vh) rotateZ(720deg); }
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Confetti Effect -->
+        <script>
+            function createConfetti() {
+                const confettiCount = 400; // Number of confetti pieces
+
+                for (let i = 0; i < confettiCount; i++) {
+                    const confetti = document.createElement('div');
+                    confetti.className = 'confetti';
+                    confetti.style.left = Math.random() * 100 + 'vw'; // Random horizontal position
+                    confetti.style.animationDuration = Math.random() * 6 + 2 + 's'; // Random duration
+                    document.body.appendChild(confetti);
+                }
+            }
+
+            // Trigger confetti creation on page load
+            window.onload = createConfetti;
+        </script>
+   
+
+
+
+
+
+
+
+
+   
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            margin-top: 50px;
+        }
+        h1 {
+            color: #ffcc00;
+        }
+        #loginForm {
+            margin-top: 20px;
+        }
+        input[type="text"],
+        input[type="password"],
+        button {
+            padding: 10px;
+            margin: 5px;
+            border-radius: 8px;
+            border: 1px solid #ffcc00;
+            background-color: #222;
+            color: #ffcc00;
+            font-weight: bold;
+            font-size: 16px;
+            outline: none;
+        }
+        button:hover {
+            background-color: #ffcc00;
+            color: #000;
+            transition: all 0.3s ease;
+        }
+        .confetti {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background-color: #ffcc00;
+            opacity: 0.8;
+            pointer-events: none;
+            animation: confetti-fall linear infinite;
+            transform-origin: top left;
+        }
+        @keyframes confetti-fall {
+            0% { transform: translateY(-100vh) rotateZ(0); }
+            100% { transform: translateY(100vh) rotateZ(720deg); }
+        }
+    </style>
+</head>
+<body>
+    
+
+
+        <style>
+            body {
+                background-color: #000;
+                overflow: hidden;
+            }
+            .confetti {
+                position: absolute;
+                width: 8px;
+                height: 8px;
+                background-color: #ffcc00;
+                opacity: 0.8;
+                pointer-events: none;
+                animation: confetti-fall linear infinite;
+                transform-origin: top left;
+            }
+            @keyframes confetti-fall {
+                0% { transform: translateY(-100vh) rotateZ(0); }
+                100% { transform: translateY(100vh) rotateZ(720deg); }
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Confetti Effect -->
+        <script>
+            function createConfetti() {
+                const confettiCount = 150; // Number of confetti pieces
+                const duration = 5; // Duration in seconds
+
+                for (let i = 0; i < confettiCount; i++) {
+                    const confetti = document.createElement('div');
+                    confetti.className = 'confetti';
+                    confetti.style.left = Math.random() * 100 + 'vw'; // Random horizontal position
+                    confetti.style.animationDuration = Math.random() * duration + 2 + 's'; // Random duration
+                    document.body.appendChild(confetti);
+
+                    setTimeout(() => {
+                        document.body.removeChild(confetti);
+                    }, duration * 1000);
+                }
+            }
+
+            // Trigger confetti creation on page load or any desired event
+            window.onload = createConfetti;
+        </script>
+    </body>
+  
+
+
+
+
+
+
+
+
+
+   
+        <style>
+            body {
+                background-color: #000;
+                overflow: hidden;
+                margin: 0;
+                padding: 0;
+            }
+            .confetti {
+                position: absolute;
+                width: 8px;
+                height: 8px;
+                background-color: #ffcc00;
+                opacity: 0.8;
+                pointer-events: none;
+                animation: confetti-fall linear infinite;
+                transform-origin: top left;
+            }
+            @keyframes confetti-fall {
+                0% { transform: translateY(-100vh) rotateZ(0); }
+                100% { transform: translateY(100vh) rotateZ(720deg); }
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Confetti Effect -->
+        <script>
+            function createConfetti() {
+                const confettiCount = 800; // Number of confetti pieces
+
+                for (let i = 0; i < confettiCount; i++) {
+                    const confetti = document.createElement('div');
+                    confetti.className = 'confetti';
+                    confetti.style.left = Math.random() * 100 + 'vw'; // Random horizontal position
+                    confetti.style.animationDuration = Math.random() * 6 + 2 + 's'; // Random duration
+                    document.body.appendChild(confetti);
+                }
+            }
+
+            // Trigger confetti creation on page load
+            window.onload = createConfetti;
+        </script>
+    </body>
+   
+
+</html>
+
+
+    <div id="game-container">
+        <!-- Updated image paths to directly reference the "images" folder -->
+       
+         <img src="{{ url_for('static', filename='images/image5.png') }}" alt="Game 5">
+        <!-- Add more images as needed -->
+    </div>

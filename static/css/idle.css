@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  font-family: 'Sofia','AbeeZee';
+  background-image: linear-gradient(to right,#0a031d,#480838,#580838,#480838,#0a031d);
+  overflow: hidden;
+}
+.header {
+  background-color: #0a031d;  
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 5px #7e5c56;
+}
+#countButton {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;  
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #0a031d;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #353e45;
+  position: absolute;
+  top: 25%;
+  width: 25%;
+  left: 37%;
+  font-family: 'Sofia';
+  text-shadow: 2px 2px 5px #4f3222;
+  white-space: pre-line;
+}
+#countButton:hover {background-color:  	#000036}
+#countButton:active {
+  background-color: #000036;
+  box-shadow: 0 5px #212121;
+  transform: translateY(4px);
+}
+#displayCount {
+  font-family: 'Sofia';
+  font-size: 36px;
+  text-shadow: 2px 2px 5px #4f3222;
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: 45%;
+  width: 25%;
+  left: 37%;
+}
+#resetButton {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #0a031d;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #353e45;
+  position: absolute;
+  top: 75%;
+  width: 25%;
+  left: 37%;
+  font-family: 'Sofia';
+  text-shadow: 2px 2px 5px #4f3222;
+  white-space: pre-line;
+}
+#resetButton:hover {background-color:  	#000036}
+#resetButton:active {
+  background-color: #000036;
+  box-shadow: 0 5px #212121;
+  transform: translateY(4px);
+}
+.btn-group {
+  position: absolute; 
+  left: 25px;
+  width: 25%;
+}
+
+.btn-group button {
+  background-color: #580838;
+  border: 1px #5a2a63;
+  color: white;
+  font-family: 'AbeeZee';
+  font-size: 13px;
+  padding: 10px 24px;
+  cursor: pointer;
+  width: 100%;
+  display: block;
+  margin: 5px;
+  position: relative;
+}
+.btn-group button:not(:last-child) {
+  border-bottom: none;
+}
+.btn-group button:hover {
+  background-color:  #480838;
+}
+.btn-group h2 {
+  color: white;
+  text-shadow: #5a2a63;  
+  position: relative;  
+  text-align: center;
+}

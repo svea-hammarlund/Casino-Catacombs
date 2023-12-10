@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casino Catacombs</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/casinocatacombs.css') }}"> <!-- Corrected link to your CSS file -->
+</head>
+<body>
+    <h1>Welcome to the Casino Catacombs page</h1>
+    <a href="/">Go to Back to the Homepage</a>
+    <br>
+    <div id="userInfo"></div> <!-- Moved inside body -->
+    <div id="displayCount"></div>
+    <div class="game-area">
+        <div class="line-wrapper"></div>
+        <div class="horizontal-line"></div>
+        <div class="horizontal-line-bottom"></div>
+        <div class="hole"></div>
+        <div class="shoppe"></div>
+        <div class="slots" id="slot1"></div>
+        <div class="slots" id="slot2"></div>
+        <div class="slots" id="slot3"></div>
+        <div class="slots" id="slot4"></div>
+        <div class="slots" id="slot5"></div>
+        <div class="slots" id="slot6"></div>
+        <div class="stool" id="stool1"></div>
+        <div class="stool" id="stool2"></div>
+        <div class="stool" id="stool3"></div>
+        <div class="stool" id="stool4"></div>
+        <div class="stool" id="stool5"></div>
+        <div class="stool" id="stool6"></div>
+        <div class="stool" id="stool7"></div>
+        <div class="stool" id="stool8"></div>
+        <div class="stool" id="stool9"></div>
+        <div class="stool" id="stool10"></div>
+        <div class="stool" id="stool11"></div>
+        <div class="stool" id="stool12"></div>
+        <div class="stool" id="stool13"></div>
+        <div class="stool" id="stool14"></div>
+        <div class="stool" id="stool15"></div>
+        <div class="stool" id="stool16"></div>
+        <div class="stool" id="stool17"></div>
+        <div class="stool" id="stool18"></div>
+        <div class="stool" id="stool19"></div>
+        <div class="plant" id="plant1"></div>
+        <div class="plant" id="plant2"></div>
+        <div class="plant" id="plant3"></div>
+        <div class="plant" id="plant4"></div>
+        <div class="black-jack" id="blackjack1"></div>
+        <div class="black-jack" id="blackjack2"></div>
+        <div class="roulette" id="roulette2"></div>
+        <div class="roulette" id="roulette3"></div>
+        <div id="interactionPopup" style="display: none; position; absolute; /* Other styling */">
+            Press E to interact
+        </div>
+        <div class="character-front" id="character"></div>
+    </div>
+    <script src="{{ url_for('static', filename='js/casinocatacombs.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/user-info.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/idle.js') }}"></script>
+   
+
+
+    

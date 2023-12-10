@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/instructions.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <title>Game Instructions</title>
+</head>
+<body>
+    <div id="instructions-container">
+        <div id="chat-box">
+            <div id="message"></div>
+            <div id="continue-btn" onclick="showNextMessage()">Next</div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/instructions.js') }}"></script>
+
+<!-- Confetti Effect -->
+    <script>
+        function createConfetti() {
+            const confettiCount = 150; // Number of confetti pieces
+            const duration = 5; // Duration in seconds
+
+            for (let i = 0; i < confettiCount; i++) {
+                const confetti = document.createElement('div');
+                confetti.className = 'confetti';
+                confetti.style.left = Math.random() * 100 + 'vw'; // Random horizontal position
+                confetti.style.animationDuration = Math.random() * duration + 2 + 's'; // Random duration
+                document.body.appendChild(confetti);
+
+                setTimeout(() => {
+                    document.body.removeChild(confetti);
+                }, duration * 1000);
+            }
+        }
+
+        // Trigger confetti creation on page load or any desired event
+        window.onload = createConfetti;
+    </script>
+</body>
+</html>

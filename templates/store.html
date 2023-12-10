@@ -1,0 +1,152 @@
+in<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎰 Casino App Store 🎲</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+    <style>
+        body {
+            background-color: #e74c3c; /* Red background color for a casino vibe */
+            color: #ecf0f1; /* Light text color for contrast */
+            font-family: 'Arial', sans-serif; /* Choose a suitable font for the theme */
+            margin: 0; /* Remove default body margin */
+            padding: 20px; /* Add padding for content spacing */
+            position: relative; /* Position relative for absolute positioning of stars and lights */
+        }
+
+        h1, h2 {
+            color: #2ecc71; /* Header text color in a casino gold tone */
+        }
+
+        a {
+            color: #3498db; /* Link color in a casino blue tone */
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline; /* Underline on hover for links */
+        }
+
+        #game-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        /* Shining stars animation */
+        .shining-star {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #f39c12; /* Gold color for stars */
+            border-radius: 50%;
+            animation: shine 1s infinite alternate; /* Shining animation */
+        }
+
+        @keyframes shine {
+            from {
+                opacity: 0.5;
+                transform: scale(1);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1.2);
+            }
+        }
+
+        /* Flashing lights animation */
+        .flashing-light {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: #ecf0f1; /* Light color for lights */
+            border-radius: 50%;
+            animation: flash 1s infinite alternate; /* Flashing animation */
+        }
+
+        @keyframes flash {
+            from {
+                opacity: 0.5;
+                transform: scale(1);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1.2);
+            }
+        }
+
+        /* Additional styles for interesting animations */
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .animated-slot-machine {
+            animation: spin 3s infinite linear;
+        }
+
+        .animated-dice {
+            animation: bounce 2s infinite linear;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to the Casino App Store</h1>
+    <!-- Place this element where you want to display the user information -->
+    <div id="userInfo"></div>
+    <a href="/">Go back to the Homepage</a>
+    <h2>Exciting Casino Applications</h2>
+
+    <!-- Container to hold dynamically created buttons and links -->
+    <div id="game-container">
+        <!-- Animated gif of a slot machine -->
+        <img src="path/to/slot_machine.gif" alt="Slot Machine" class="animated-slot-machine">
+        <!-- Animated gif of rolling dice -->
+        <img src="path/to/dice.gif" alt="Rolling Dice" class="animated-dice">
+        <!-- Add more gifs or images as needed with different animations -->
+    </div>
+
+    <!-- Shining stars and flashing lights -->
+    <div class="shining-star" style="top: 50px; left: 30px;"></div>
+    <div class="shining-star" style="top: 120px; left: 150px;"></div>
+    <div class="shining-star" style="top: 200px; left: 80px;"></div>
+
+    <div class="flashing-light" style="top: 180px; left: 250px;"></div>
+     <div class="flashing-light" style="top: 180px; left: 2550px;"></div>
+    <div class="flashing-light" style="top: 80px; left: 180px;"></div>
+    <div class="flashing-light" style="top: 300px; left: 120px;"></div>
+
+    <!-- Your existing JavaScript files -->
+    <script defer src="{{ url_for('static', filename='js/user-info.js') }}"></script>
+    <script defer src="{{ url_for('static', filename='js/store.js') }}"></script>
+
+</body>
+</html>
+
+<div id="game-container">
+    <!-- Updated image paths to directly reference the "images" folder -->
+    <img src="{{ url_for('static', filename='images/image1.png') }}" alt="Game 1">
+    <img src="{{ url_for('static', filename='images/image2.gif') }}" alt="Game 2">
+    <img src="{{ url_for('static', filename='images/image3.jpeg') }}" alt="Game 3">
+     <img src="{{ url_for('static', filename='images/image4.png') }}" alt="Game 4">
+    <!-- Add more images as needed -->
+</div>
+
+
+  
+ 

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roulette</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/roulette.css') }}">
+    <!-- You can include other meta tags, scripts, and links here -->
+</head>
+<body>
+    <!-- Now the userInfo div is correctly placed within the body -->
+    <div id="userInfo"></div>
+    <h1>Welcome to the Roulette game page</h1>
+    <a href="/">Go back to the Homepage</a>
+    <br> <!-- It's <br>, not </br> -->
+    <h1>Roulette</h1>
+
+    <!-- JavaScript files at the end of the body is a good practice for performance reasons -->
+    <script src="{{ url_for('static', filename='js/roulette.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/user-info.js') }}"></script>
+</body>
+</html>

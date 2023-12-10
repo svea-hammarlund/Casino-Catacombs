@@ -1,0 +1,72 @@
+<!-- deathshop.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Death Shop</title>
+  <style>
+      body {
+        font-family: 'Arial', sans-serif;
+        background-color: #2c3e50; /* Deep blue for a cavernous feel */
+        color: #CBC3E3;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+
+      #shopItems {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        max-width: 600px;
+        margin: 20px auto;
+      }
+
+      .shopItem {
+        background-color: #34495e; /* Darker blue for shop items */
+        border: 2px solid #2c3e50;
+        border-radius: 8px;
+        padding: 15px;
+        margin: 10px;
+        width: 200px;
+        text-align: center;
+      }
+
+      .buyButton {
+        background-color: #16a085; /* Green for buy buttons */
+        color: #fff;
+        border: none;
+        padding: 10px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      .buyButton:hover {
+        background-color: #138d75; /* Darker green on hover */
+      }
+  </style>
+</head>
+<body>
+  <h1>Welcome to the Death Shop!</h1>
+
+  <p>Gems Collected: <span id="score">0</span></p>
+
+  <h2>Shop Items:</h2>
+  <div id="items-container">
+    <div id="userInfo">
+    <!-- Shop items will be dynamically added here -->
+  </div>
+
+    <script src="../static/js/deathshop.js"></script>
+    <script src="../static/js/user-info.js"></script>
+
+    <button class="buyButton" data-item-name="Extra Life" data-item-cost="100">Buy Extra Life</button>
+    <button class="buyButton" data-item-name="Ghost Repellent" data-item-cost="200">Buy Ghost Repellent</button>
+    <button class="buyButton" data-item-name="Speed Boost" data-item-cost="150">Buy Speed Boost</button>
+    <button class="buyButton" data-item-name="Lucky Charm" data-item-cost="250">Buy Lucky Charm</button>
+</body>
+</html>
+
+

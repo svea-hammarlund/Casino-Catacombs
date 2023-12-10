@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/idle.css') }}">
+        <!-- You can include other meta tags, scripts, and links here -->
+</head>
+<body>
+    
+<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+
+<link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+
+<div class="header">
+  <h1>Buy Stock in the Casino!</h1>
+</div>
+
+<div>
+<input type="button" value="free coins!" id="countButton"><span id="displayCount">0</span><br>
+<input type="button" value="forget everything" id="resetButton" />
+</div> 
+
+<div>
+  <div class="btn-group">  
+    <h2>upgrades</h2>
+  <button id="slotsButton">Slots <br>price: 10 coins <br>1 coin/sec</button>
+  <button id="blackjackButton">BlackJack <br>price: 1 300 coins <br>10 coins/sec</button>
+  <button id="rouletteButton">Roulette <br>price: 10 000 coins <br>1 000 coins/sec</button>  
+</div>
+
+    <script src="{{ url_for('static', filename='js/idle.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/user-info.js') }}">
+
+</script>
+</body>
+</html>
+
+
+
