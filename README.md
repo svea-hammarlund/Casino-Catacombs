@@ -23,6 +23,10 @@ python -m venv env
 ```sh
 source env/bin/activate
 ```
+   Windows
+```sh
+.\env\Scripts\Activate.ps1
+```
 
 6. Install projhect dependencies
 
