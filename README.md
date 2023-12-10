@@ -17,19 +17,19 @@ Installation:
 python -m venv env
 ```
 
-6. Activate your virtual environment
+5. Activate your virtual environment
    MacOS/Linux
 
 ```sh
 source env/bin/activate
 ```
 
-7. Install projhect dependencies
+6. Install projhect dependencies
 
 ```sh
 pip install -r requirements.txt
 ```
 
-6. Once dependencies are installed, you can start the application by running `python main.py` from the terminal.
+7. Once dependencies are installed, you can start the application by running `python main.py` from the terminal.
 
-7. The game should now be running and accessible. Follow any additional instructions provided in the `README.md` file for gameplay or application usage.
+8. The game should now be running and accessible. Follow any additional instructions provided in the `README.md` file for gameplay or application usage.
