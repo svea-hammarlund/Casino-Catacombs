@@ -19,7 +19,4 @@ Installation:
 
 7. The game should now be running and accessible. Follow any additional instructions provided in the `README.md` file for gameplay or application usage.
 
-Contact:
-
-For support or feedback, contact me at: svea.hammarlund@gmail.com
 
