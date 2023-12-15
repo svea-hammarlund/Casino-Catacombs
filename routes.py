@@ -3,6 +3,8 @@ from flask import Blueprint, render_template
 routes = Blueprint('routes', __name__)
 
 
+
+
 # Define the route for the Login URL
 @routes.route('/')
 def index():
